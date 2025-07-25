@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+
+
+/* StaffSphere Theme Variables */
+/* :root {
+  --color-sage: #819A91;
+  --color-pastel: #A7C1A8;
+  --color-olive: #D1D8BE;
+  --color-cream: #EEEFE0;
+} */
+
+:root {
+  --color-sage: #819a91;
+  --color-green: #a7c1a8;
+  --color-beige: #d1d8be;
+  --color-cream: #eeefe0;
+  --color-pastel: #a7c1a8;
+}
+
+
+/* Simple fade‑in utility (optional) */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: scale(0.97); }
+  100% { opacity: 1; transform: scale(1); }
+}
+.animate-fadeIn {
+  animation: fadeIn 0.25s ease-out;
+}
+
+/* Global reset / theme */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: #333;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--color-sage);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--color-pastel);
+  text-decoration: underline;
+}
+/* Attendance heatmap colors */
+.react-calendar-heatmap .color-empty rect {
+  fill: #EEEFE0;
+  rx: 3;
+  ry: 3;
+}
+.react-calendar-heatmap .color-green rect {
+  fill: #A7C1A8;
+}
+.react-calendar-heatmap .color-red rect {
+  fill: #ffb3b3;
+}
+.react-calendar-heatmap .color-yellow rect {
+  fill: #ffe6a3;
+}
+.react-calendar-heatmap text { fill: #213547; font-size: 8px; }
+/* clamp desc lines in task cards */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* fade-in keyframe (used by modal) */
+@keyframes fadeInModal {
+  from { opacity: 0; transform: scale(.96); }
+  to   { opacity: 1; transform: scale(1); }
+}
+.animate-fadeIn {
+  animation: fadeInModal .15s ease-out forwards;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #A7C1A8;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #EEEFE0;
+}
+
+/* Smooth transitions */
+* {
+  transition: all 0.2s ease-in-out;
+  scroll-behavior: smooth;
+}
+
+/* Force sidebar link visibility */
+.sidebar-nav a,
+.sidebar-nav a * {
+  color: inherit !important;
+}
