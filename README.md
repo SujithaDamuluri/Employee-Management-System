@@ -67,24 +67,6 @@ A modern, full-featured Employee Management System designed to streamline operat
 
 ---
 
-## 📁 Project Structure
-
-EMS/
-├── backend/
-│ ├── controllers/
-│ ├── models/
-│ ├── routes/
-│ ├── middleware/
-│ └── server.js
-├── frontend/
-│ ├── src/
-│ │ ├── components/
-│ │ ├── pages/
-│ │ ├── context/
-│ │ └── App.jsx
-├── .env
-├── README.md
-└── package.json
 
 
 
