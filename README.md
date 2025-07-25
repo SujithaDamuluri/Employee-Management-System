@@ -1,3 +1,4 @@
+
 # 💼 Employee Management System (EMS)
 
 A modern, full-featured Employee Management System designed to streamline operations, boost productivity, and empower both employees and managers. It includes real-time dashboards, smart analytics, and all tools necessary for HR and organizational processes in one place.
