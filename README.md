@@ -3,13 +3,16 @@
 
 A modern, full-featured Employee Management System designed to streamline operations, boost productivity, and empower both employees and managers. It includes real-time dashboards, smart analytics, and all tools necessary for HR and organizational processes in one place.
 
+🎥 [Watch Demo Video on Vimeo](https://vimeo.com/1104855470?share=copy)
+
+
 ---
 
 ## ✨ Features
 
 ### 👥 Employee Management
 - Create, view, and update employee profiles
-- Upload profile pictures and personal documents
+- Upload profile pictures and update passwords
 - Assign employees to departments and designations
 
 ### 🏢 Department Management
@@ -18,13 +21,12 @@ A modern, full-featured Employee Management System designed to streamline operat
 - View department-based data and employee distribution
 
 ### 🕒 Attendance System
-- Clock-in / Clock-out mechanism
 - Track daily and monthly attendance
 - Auto-calculate total work hours
 
 ### 📆 Leave Management
 - Employees can apply for leaves with justifications
-- Managers can approve/reject leave requests
+- HR can approve/reject leave requests
 - Leave history and balance tracking
 
 ### 💰 Payroll Module
@@ -64,7 +66,7 @@ A modern, full-featured Employee Management System designed to streamline operat
 | Auth         | JWT, Bcrypt.js                 |
 | Charts       | Chart.js, Recharts             |
 | File Uploads | Multer                         |
-| Deployment   | Vercel (Frontend), Render/Railway (Backend) |
+
 
 ---
 
